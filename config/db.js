@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const keys = require('./keys')
-const link = keys.mongoUrl;
+// const keys = require('./keys')
+const link = process.env.MONGO_URL;
 
 const connectDB = async () => {
   try {
